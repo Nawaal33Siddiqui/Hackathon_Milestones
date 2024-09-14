@@ -1,0 +1,162 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 50px;
+}
+
+/* Resume Container */
+.resume-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Section Styling */
+.left-section {
+    background-color: #2c2c2c;
+    color: #fff;
+    padding: 20px;
+    width: 35%;
+    text-align: center;
+    border-right: 5px solid #fa6f0c;
+    box-shadow: 0 0 15px #e29420;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    margin-top: 10%;
+    border-radius: 50%;
+    border: 5px solid #e3871e;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 18px;
+    padding: 2%;
+    margin: 20px 0 10px;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ff9a02;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+ul {
+    list-style-type: disc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Right Section Styling */
+.right-section {
+    padding: 20px;
+    width: 65%;
+    box-shadow: 0 0 15px #e29420;
+}
+
+button {
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #ec9822;
+}
+
+/* Media Query for Tablets and Smaller Screens */
+@media screen and (max-width: 1024px) {
+    .resume-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .left-section, 
+    .right-section {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .left-section {
+        border-right: none;
+        border-bottom: 5px solid #fa6f0c;
+    }
+
+    .profile-picture {
+        width: 130px;
+        height: 130px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+}
+
+/* Media Query for Mobile Screens */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .resume-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .left-section, 
+    .right-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .left-section {
+        border-right: none;
+        border-bottom: 5px solid #fa6f0c;
+    }
+
+    .profile-picture {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+}
+
